@@ -27,7 +27,7 @@ Bu depoyu klonlayın veya index.html dosyasını indirin.
 
 Dosyaya çift tıklayarak herhangi bir tarayıcıda (Chrome, Safari, Edge vb.) görüntüleyebilirsiniz.
 
-Bu proje eğitim amaçlı, başlangıç seviyesinde bir web uygulaması örneği olarak geliştirilmiştir.
+*Bu proje eğitim amaçlı, başlangıç seviyesinde bir web uygulaması örneği olarak geliştirilmiştir.
 
  # beauty salon website
 This project is a simple, modern, and user-friendly single-page appointment booking interface designed for a beauty center.
@@ -43,4 +43,4 @@ JavaScript: For form management and basic user interactions.
 ## Installation and Usage
 Clone this repository or download the index.html file.
 Double-click the file to view it in any web browser (Chrome, Safari, Edge, etc.).
-This project was developed as a beginner-level web application example for educational purposes.
+*This project was developed as a beginner-level web application example for educational purposes.
