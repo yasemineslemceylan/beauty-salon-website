@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarif Güzellik Merkezi</title>
+    <style>
+        /* CSS: Sitenin makyajı burada (Sadece temel şıklık için) */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #fffafb; color: #4a4a4a; line-height: 1.6; }
+        header { background: #f8d7da; padding: 40px; text-align: center; border-bottom: 5px solid #f1b0b7; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        .service-card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        form { background: #fff; padding: 20px; border-radius: 10px; border: 1px solid #eee; }
+        input, select, button { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { background-color: #d63384; color: white; border: none; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #b82b71; }
+        .success { color: green; font-weight: bold; text-align: center; display: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Zarif Güzellik Merkezi</h1>
+    <p>Kendine bir iyilik yap, güzelliğini tazele.</p>
+</header>
+
+<div class="container">
+    <h2>Hizmetlerimiz</h2>
+    <div class="service-card">✨ <strong>Cilt Bakımı:</strong> Derinlemesine temizlik ve nemlendirme.</div>
+    <div class="service-card">💅 <strong>Manikür & Pedikür:</strong> Zarif dokunuşlar.</div>
+    <div class="service-card">💆 <strong>Masaj:</strong> Günün stresinden arının.</div>
+
+    <hr>
+
+    <h2>Randevu Al</h2>
+    <p id="msg" class="success">Randevunuz başarıyla iletildi! Sizi arayacağız.</p>
+    
+    <form id="appointmentForm">
+        <label>Adınız Soyadınız:</label>
+        <input type="text" id="name" placeholder="Örn: Ayşe Yılmaz" required>
+        
+        <label>Hizmet Seçin:</label>
+        <select id="service">
+            <option value="cilt">Cilt Bakımı</option>
+            <option value="tirnak">Manikür & Pedikür</option>
+            <option value="masaj">Masaj</option>
+        </select>
+        
+        <label>Tarih:</label>
+        <input type="date" id="date" required>
+        
+        <button type="submit">Randevuyu Tamamla</button>
+    </form>
+</div>
+
+<script>
+    // JavaScript: Formun çalışmasını sağlar (En kısa haliyle)
+    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Sayfanın yenilenmesini engeller
+        document.getElementById('appointmentForm').style.display = 'none'; // Formu gizler
+        document.getElementById('msg').style.display = 'block'; // Başarı mesajını gösterir
+    });
+</script>
+
+</body>
+</html>
