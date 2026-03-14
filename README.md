@@ -43,4 +43,5 @@ JavaScript: For form management and basic user interactions.
 ## Installation and Usage
 Clone this repository or download the index.html file.
 Double-click the file to view it in any web browser (Chrome, Safari, Edge, etc.).
+
 *This project was developed as a beginner-level web application example for educational purposes.
